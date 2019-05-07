@@ -1,6 +1,24 @@
-.question{
+.actualQuestion{
   font-size: 15px;
+  font-weight: bold;
 }
-input{
-  font-size: 10px;
+h1{
+
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.answer{
+  font-size: 8px;
+  color: red;
+}
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2015/09/15/18/17/paw-print-941498_1280.jpg);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button{
+  text-align: center;
 }
