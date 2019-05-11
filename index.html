@@ -2,104 +2,64 @@
 
 <head>
 	<title>Doge Website</title>
-	<link rel="icon" href="http://www.clker.com/cliparts/X/v/L/B/Y/q/dog-head-cartoon-md.png"></link>
+	<link rel="icon" href="http://www.clker.com/cliparts/X/v/L/B/Y/q/dog-head-cartoon-md.png">
+	<link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-	<form class="question" id="q1">
-		1. How much free time do you have (in hours) ? <br>
-		<input type="number">
-	</form>
-	<br>
-	<form class="question" id="q2">
-		2. Do you like to be alone? <br>
-		<input type="radio" name="q2">Yes <br>
-		<input type="radio" name="q2">No
-	</form>
-	<br>
-	<form class="question" id="q3">
-		3. How much exercise do you do in a week (in hours)? <br>
-		<input type="number">
-	</form>
-	<br>
-	<form class="question" id="q4">
-		4. Any allergies to previous dogs that you’ve encountered? <br>
-		<input type="radio" name="q4">Yes <br>
-		<input type="radio" name="q4">No
-	</form>
-	<br>
-	<form class="question" id="q5">
-		5. What is your monthly salary (in dollars)? <br>
-		<input type="number">
-	</form>
-	<br>
-	<form class="question" id="q6">
-		6. Do you like children? <br>
-		<input type="radio" name="q6">If they are behaved <br>
-		<input type="radio" name="q6">I hate kids <br>
-		<input type="radio" name="q6">I love kids <br>
-		<input type="radio" name="q6">I don’t mind them
-	</form>
-	<br>
-	<form class="question" id="q7">
-		7. How would you like for your family to react to you when you come home? <br>
-		<input type="radio" name="q7">Excited <br>
-		<input type="radio" name="q7">Calm <br>
-		<input type="radio" name="q7">Curious <br>
-		<input type="radio" name="q7">Oblivious
-	</form>
-	<br>
-	<form class="question" id="q8">
-		8. How much do you spend on food a week (In Zimbabwean Dollars)? <br>
-		<input type="number">
-	</form>
-	<br>
-	<form class="question" id="q9">
-		9. Do you like fat people or skinny people? <br>
-		<input type="radio" name="q9">Fat <br>
-		<input type="radio" name="q9">Skinny <br>
-		<input type="radio" name="q9">I don’t mind <br>
-	</form>
-	<br>
-	<form class="question" id="q10">
-		10. How much time do you spend travelling per month (in days)? <br>
-		<input type="number">
-	</form>
-	<br> 
-	<form class="question" id="q11">
-		11. How long do you wait at the dentist office before you decide to leave? <br>
-		<input type="radio" name="q11">Leave after 10 minutes <br>
-		<input type="radio" name="q11">Leave at 20 minutes <br>
-		<input type="radio" name="q11">Never leave
-	</form>
-	<br>
-	<form class="question" id="q12">
-		12. What is your favorite temperature (in degrees Fahrenheit)? <br>
-		<input type="number">
-	</form>
-	<br>
-	<form class="question" id="q13">
-		13. Do you live by yourself? <br>
-		<input type="radio" name="q13">With Children <br>
-		<input type="radio" name="q13">No <br>
-		<input type="radio" name="q13">With Adults only <br>
-		<input type="radio" name="q13">Either Children or adults
-	</form>
-	<br>
-	<form class="question" id="q14">
-		14. Would you pay for dog clothing? <br>
-		<input type="radio" name="q14">I think that’s dumb <br>
-		<input type="radio" name="q14">If it’s cheap <br>
-		<input type="radio" name="q14">Of course
-	</form>
-	<br>
-	<form class="question" id="q15">
-		15. Where do you see yourself in 10 years? <br>
-		<input type="radio" name="q15">In a big house with a spouse and kids <br>
-		<input type="radio" name="q15">Travelling <br>
-		<input type="radio" name="q15">Helping the poor <br>
-		<input type="radio" name="q15">On welfare in a small house
-	</form>
+	<h1>Welcome to Dog Tinder</h1>
+	<h3>Pairing Owners to Their Dogs since 1983</h3>
+<form name="getData" action="." method="post">
+	
+		<div class="actualQuestion"> 1. How much free time do you have (in hours) ? </div><br>
+		<input type="number" name="freeTime"><br>
+	
+		<br><div class="actualQuestion"> 2. Do you like to be alone? </div><br>
+		<input class="answer" type="radio" name="alone?" value="Yes">Yes <br>
+		<input class="answer" type="radio" name="alone?" value="No">No<br>
+	
+		<br><div class="actualQuestion"> 3. How much exercise do you do in a week (in hours)? </div><br>
+		<input type="number" name="exercise"><br>
+	
+		<br><div class="actualQuestion"> 4. Any allergies to previous dogs that you’ve encountered?</div> <br>
+		<input class="answer" type="radio" name="allergies" value="Yes">Yes <br>
+		<input class="answer" type="radio" name="allergies" value="No">No<br>
+	
+		<br><div class="actualQuestion"> 5. What is your monthly salary (in dollars)? </div><br>
+		<input type="number" name="salary"><br>
+	
+		<br><div class="actualQuestion"> 6. Do you like children? </div><br>
+		<input class="answer" type="radio" name="children?" value="If they are behaved">If they are behaved <br>
+		<input class="answer" type="radio" name="children?" value="I hate kids">I hate kids <br>
+		<input class="answer" type="radio" name="children?" value="I love kids">I love kids <br>
+		<input class="answer" type="radio" name="children?" value="I don't mind them">I don’t mind them<br>
+	
+		<br><div class="actualQuestion"> 7. How would you like for your family to react to you when you come home?</div> <br>
+		<input class="answer" type="radio" name="reaction" value="Excited">Excited <br>
+		<input class="answer" type="radio" name="reaction" value="Calm">Calm <br>
+		<input class="answer" type="radio" name="reaction" value="Curious">Curious <br>
+		<input class="answer" type="radio" name="reaction" value="Oblivious">Oblivious<br>
+	
+		<br><div class="actualQuestion"> 8. Do you like fat people or skinny people? </div><br>
+		<input class="answer" type="radio" name="fatSkinny" value="Fat">Fat <br>
+		<input class="answer" type="radio" name="fatSkinny" value="Skinny">Skinny <br>
+		<input class="answer" type="radio" name="fatSkinny" value="I don't mind">I don’t mind <br>
+
+	
+		<br><div class="actualQuestion"> 9. How long do you wait at the dentist office before you decide to leave?</div> <br>
+		<input class="answer" type="radio" name="patience" value="Leave after 10 minutes">Leave after 10 minutes <br>
+		<input class="answer" type="radio" name="patience" value="Leave at 20 minutes">Leave at 20 minutes <br>
+		<input class="answer" type="radio" name="patience" value="Never leave">Never leave<br>
+	
+		<br><div class="actualQuestion"> 10. What is your favorite temperature (in degrees Fahrenheit)? </div><br>
+		<input type="number" name="temperature"><br>
+	
+		<br><div class="actualQuestion"> 11. Would you pay for dog clothing?</div> <br>
+		<input class="answer" type="radio" name="grooming" value="I think that's dumb">I think that’s dumb <br>
+		<input class="answer" type="radio" name="grooming" value="If it's cheap">If it’s cheap <br>
+		<input class="answer" type="radio" name="grooming" value="Of course">Of course<br>
+		<input type="submit" value="submit">
+</form>
 </body>
 
 </html>
