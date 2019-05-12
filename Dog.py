@@ -1,5 +1,5 @@
 class doggie:
-    def __init__(self, time, alone, exerciseTime, allergies, salary, children, personality, size, dentistTime, temperature, dogClothing, points=0):
+    def __init__(self, time, alone, exerciseTime, allergies, salary, children, personality, size, dentistTime, temperature, dogClothing):
         self.time=time
         self.alone=alone
         self.exerciseTime=exerciseTime
@@ -11,6 +11,7 @@ class doggie:
         self.dentistTime=dentistTime
         self.temperature=temperature
         self.dogClothing=dogClothing
+        self.points = 0
         
     def printinfo(self):
         print("Activity Level: "+self.time)

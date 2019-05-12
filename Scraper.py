@@ -44,13 +44,13 @@ def generateAttributes(index):
         link4+='-dog'
     
     req = Request(url=link, headers=headers) 
-    html = urlopen(req, timeout=5).read()
+    html = urlopen(req, timeout=10).read()
     req2 = Request(url=link2, headers=headers) 
-    html2 = urlopen(req2, timeout=5).read()
+    html2 = urlopen(req2, timeout=10).read()
     req3 = Request(url=link3, headers=headers) 
-    html3 = urlopen(req3, timeout=5).read()
+    html3 = urlopen(req3, timeout=10).read()
     req4 = Request(url=link4, headers=headers) 
-    html4 = urlopen(req4, timeout=5).read()
+    html4 = urlopen(req4, timeout=10).read()
  
     soup = BeautifulSoup(html, 'html.parser')
     soup2 = BeautifulSoup(html2, 'html.parser')
@@ -103,7 +103,8 @@ def generateAttributes(index):
                 )
     dogs["breed{0}".format(index)]=obj
     
-if __name__ == "__main__": 
+def main():
+
     try:
         threads = [threading.Thread(target=generateAttributes, args=(x,)) for x in range(0,len(breeds))]
         for thread in threads:
@@ -111,18 +112,20 @@ if __name__ == "__main__":
         for thread in threads:
             thread.join()
             
-        for x in range(0,len(breeds)):
-            print(breeds[x])
-            dogs["breed{0}".format(x)].printinfo()
-    
+        #for x in range(0,len(breeds)):
+          #  print(breeds[x])
+           # dogs["breed{0}".format(x)].printinfo()
+        #print(dogs)
     except ConnectionError as e:
-        print("OOPS!! Connection Error. Make sure you are connected to Internet. Technical Details given below.\n")
+        print("Connection Error.\n")
         print(str(e))
     except TimeoutError as e:
-        print("OOPS!! Timeout Error")
+        print("Timeout Error")
         print(str(e))
     except KeyboardInterrupt:
         print("Someone closed the program")
     except Exception as e:    
-        print("OOPS!! General Error")
+        print("General Error")
         print(str(e))
+if __name__ == "__main__":
+    main()
