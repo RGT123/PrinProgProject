@@ -1,0 +1,3 @@
+Flask is necessary to run the project(from app.py). Can be installed by creating a virtual environment using pip install flask on Windows. 
+
+Create a folder named "templates" in the same directory as where the files will be stored, and move index.html into this folder.
