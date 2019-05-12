@@ -1,5 +1,5 @@
 class doggie:
-    def __init__(self, points=0, time, alone, exerciseTime, allergies, salary, children, personality, size, travellingTime, dentistTime, temperature, livingArrangements, dogClothing, tenYears):
+    def __init__(self, time, alone, exerciseTime, allergies, salary, children, personality, size, dentistTime, temperature, dogClothing, points=0):
         self.time=time
         self.alone=alone
         self.exerciseTime=exerciseTime
@@ -8,11 +8,20 @@ class doggie:
         self.children=children
         self.personality=personality
         self.size=size
-        self.travellingTime=travellingTime
         self.dentistTime=dentistTime
         self.temperature=temperature
-        self.livingArrangements=livingArrangements
         self.dogClothing=dogClothing
-        self.tenYears=tenYears
-
+        
+    def printinfo(self):
+        print("Activity Level: "+self.time)
+        print("Tolerates alone: "+self.alone)
+        print("Exercise Needs: "+self.exerciseTime)
+        print("Allergies: "+self.allergies)
+        print("Cost: "+self.salary)
+        print("Kid friendly: "+self.children)
+        print("Home reaction: "+self.personality)
+        print("Size: "+self.size)
+        print("Trainability: "+self.dentistTime)
+        print("Tolerates cold weather: "+self.temperature)
+        print("Grooming Needs: "+self.dogClothing)
 
